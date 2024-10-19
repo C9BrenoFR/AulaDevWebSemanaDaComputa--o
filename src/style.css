@@ -1,5 +1,6 @@
 :root{
     --image: url('https://wallpapers.com/images/hd/autumn-macbook-arakurayama-sengen-park-k3jb30neani00gij.jpg');
+    --image2: url('https://img.freepik.com/free-vector/hand-drawn-chinese-style-illustration_23-2149752314.jpg?t=st=1729366494~exp=1729370094~hmac=ac7eca656b124fa7cabfc259a36802d10f72de13daf0dcd74a1eb7fe1f09ab4d&w=996');
 }
 
 *{
@@ -73,7 +74,7 @@ body{
 .image{
     height: 100%;
     width: 100%;
-    background-image: var(--image);
+    background-image: var(--image2);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
