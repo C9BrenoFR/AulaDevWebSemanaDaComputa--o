@@ -45,37 +45,39 @@
             </li>
         </ul>
     </nav>
-    <aside id="sidebar">
-
-        <section onclick="janela(0, 'destino')" id="widget_1">
-            Argentina
-        </section>
-        <section onclick="janela(1, 'destino')" id="widget_2">
-            Cuba
-        </section>
-        <section onclick="janela(2, 'destino')" id="widget_3">
-            Indonésia
-        </section>
-        <section onclick="janela(3, 'destino')" id="widget_4">
-            Itália
-        </section>
-        <section onclick="janela(4, 'destino')" id="widget_5">
-            França
-        </section>
-        </ul>
-    </aside>
-    <aside id="sidebar2">
-        <section>
-            <h1>Pacotes para <span id="destino"></span> </h1>
-            <ul id="lista-pacotes">
+    <section class="cards-mae">
+        <aside id="sidebar" class="sidebar">
+            <section onclick="janela(0, 'destino')" id="widget_1">
+                Argentina
+            </section>
+            <section onclick="janela(1, 'destino')" id="widget_2">
+                Cuba
+            </section>
+            <section onclick="janela(2, 'destino')" id="widget_3">
+                Indonésia
+            </section>
+            <section onclick="janela(3, 'destino')" id="widget_4">
+                Itália
+            </section>
+            <section onclick="janela(4, 'destino')" id="widget_5">
+                França
+            </section>
             </ul>
-        </section>
-    </aside>
-    <aside id="sidebar3">
-        <section>
-            <h1 id="pacote-conteudo"></h1>
-        </section>
-    </aside>
+        </aside>
+        <aside id="sidebar2" class="sidebar">
+            <section>
+                <h1>Pacotes para <span id="destino"></span> </h1>
+                <ul id="lista-pacotes">
+                </ul>
+            </section>
+        </aside>
+        <aside id="sidebar3" class="sidebar">
+            <section>
+                <h1 id="pacote-conteudo"></h1>
+            </section>
+        </aside>
+    </section>
+
 </body>
 <script src="/src/main.js"></script>
 
