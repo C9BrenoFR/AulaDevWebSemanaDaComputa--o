@@ -49,46 +49,63 @@ function janela(aux, id) {
             nav2.style.display = "block"
             contador = 0;
             argentina.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "/" + element.preco + "/" + element.parcelas + "'onclick='janela2(0," + element.nome + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</li>"
                 contador++;
             });
+            nav3.style.display = "none"
             break;
         case 1:
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Cuba"
             nav2.style.display = "block"
+            contador = 0;
             cuba.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</li>"
+                contador++;
             });
+            nav3.style.display = "none"
 
             break;
+
         case 2:
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Indonésia"
             nav2.style.display = "block"
+            contador = 0;
             indonesia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</li>"
+                contador++;
             });
+            nav3.style.display = "none"
 
             break;
+
         case 3:
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Itália"
             nav2.style.display = "block"
+            contador = 0;
             italia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</li>"
+                contador++;
             });
+            nav3.style.display = "none"
 
             break;
+
         case 4:
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "França"
             nav2.style.display = "block"
+            contador = 0;
             franca.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</li>"
+                contador++;
             });
+            nav3.style.display = "none"
 
             break;
+
         default:
             console.log("Invalid option selected");
     }
@@ -99,46 +116,31 @@ function janela2(aux, id) {
             nav3_conteudo.innerHTML = "";
             nav3.style.display = "block"
             contador = 0;
-            argentina.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='janela" + contador + "'>" + element.nome + "</li>"
-                contador++;
-            });
+            nav3_conteudo.innerHTML += "<li>" + argentina[id].nome + "</li><li>" + argentina[id].preco + "</li><li>" + argentina[id].parcelas + "</li>"
             break;
         case 1:
-            nav2_conteudo.innerHTML = "";
-            document.getElementById(id).innerHTML = "Cuba"
-            nav2.style.display = "block"
-            cuba.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
-            });
-
+            nav3_conteudo.innerHTML = "";
+            nav3.style.display = "block"
+            contador = 0;
+            nav3_conteudo.innerHTML += "<li>" + cuba[id].nome + "</li><li>" + cuba[id].preco + "</li><li>" + cuba[id].parcelas + "</li>"
             break;
         case 2:
-            nav2_conteudo.innerHTML = "";
-            document.getElementById(id).innerHTML = "Indonésia"
-            nav2.style.display = "block"
-            indonesia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
-            });
-
+            nav3_conteudo.innerHTML = "";
+            nav3.style.display = "block"
+            contador = 0;
+            nav3_conteudo.innerHTML += "<li>" + indonesia[id].nome + "</li><li>" + indonesia[id].preco + "</li><li>" + indonesia[id].parcelas + "</li>"
             break;
         case 3:
-            nav2_conteudo.innerHTML = "";
-            document.getElementById(id).innerHTML = "Itália"
-            nav2.style.display = "block"
-            italia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
-            });
-
+            nav3_conteudo.innerHTML = "";
+            nav3.style.display = "block"
+            contador = 0;
+            nav3_conteudo.innerHTML += "<li>" + italia[id].nome + "</li><li>" + italia[id].preco + "</li><li>" + italia[id].parcelas + "</li>"
             break;
         case 4:
-            nav2_conteudo.innerHTML = "";
-            document.getElementById(id).innerHTML = "França"
-            nav2.style.display = "block"
-            franca.forEach(element => {
-                nav2_conteudo.innerHTML += "<li>" + element.nome + "</li>"
-            });
-
+            nav3_conteudo.innerHTML = "";
+            nav3.style.display = "block"
+            contador = 0;
+            nav3_conteudo.innerHTML += "<li>" + franca[id].nome + "</li><li>" + franca[id].preco + "</li><li>" + franca[id].parcelas + "</li>"
             break;
         default:
             console.log("Invalid option selected");
