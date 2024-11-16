@@ -1,21 +1,21 @@
-:root{
+:root {
     --image: url('https://www.state.gov/wp-content/uploads/2023/07/shutterstock_667548661v2.jpg');
     --image2: url('https://att-japan.net/wp-content/uploads/2023/06/pixta_97309535_M.webp');
     --image3: url('https://career-advice.jobs.ac.uk/wp-content/uploads/Switzerland-e1634207571492.jpg.optimal.jpg');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100dvh;
 }
 
-.navbar{
+.navbar {
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -25,28 +25,28 @@ body{
     color: white;
 }
 
-.navbar h1{
+.navbar h1 {
     font-size: 2rem;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.navbar ul li{
+.navbar ul li {
     margin: 0 10px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.navbarButton{
+.navbarButton {
     border: solid 2px black;
     border-color: black;
     background: black;
@@ -55,7 +55,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.navbarButton:hover{
+.navbarButton:hover {
     scale: 1.2;
     filter: drop-shadow(0 0 0.75rem white);
 }
@@ -63,28 +63,28 @@ body{
 .swiper {
     width: 100%;
     height: calc(100% - 120px);
-  }
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 18px;
-  background: #366273;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0px
 }
 
-.swiper-pagination{
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #366273;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px
+}
+
+.swiper-pagination {
     position: absolute;
     bottom: 0;
     left: 50%;
 }
 
 
-.image{
+.image {
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -95,19 +95,19 @@ body{
     padding: 100px;
 }
 
-.bg-1{
+.bg-1 {
     background-image: var(--image);
 }
 
-.bg-2{
+.bg-2 {
     background-image: var(--image2);
 }
 
-.bg-3{
+.bg-3 {
     background-image: var(--image3);
 }
 
-.caixa{
+.caixa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ body{
     width: 100%;
 }
 
-.text{
+.text {
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -129,4 +129,12 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+}
+
+#sidebar2 {
+    display: none;
+}
+
+#sidebar3 {
+    display: hidden;
 }

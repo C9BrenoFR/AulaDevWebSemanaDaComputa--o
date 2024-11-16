@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shu Passeios</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -46,62 +45,39 @@
             </li>
         </ul>
     </nav>
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <div class="image bg-1">
-            <div class="caixa">
-                <p class="text">
-                    A França encanta com sua rica história e monumentos icônicos como a Torre Eiffel. Famosa pela gastronomia e moda, Paris é o símbolo de romance e cultura.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="image bg-2">
-            <div class="caixa">
-                <p class="text">
-                    O Japão equilibra tradição e modernidade, com templos antigos e tecnologia avançada. Tokyo destaca esse contraste, e a cultura japonesa é admirada pelo mundo.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-slide">
-        <div class="image bg-3">
-            <div class="caixa">
-                <p class="text">
-                    A Suíça é conhecida pelos Alpes, chocolates e relógios. Suas cidades organizadas e belas paisagens fazem dela um destino de paz e qualidade de vida.
-                </p>
-            </div>
-        </div>
-    </div>
-  </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    <aside id="sidebar">
 
-  <div class="swiper-pagination"></div>
-</div>
+        <section onclick="janela(0, 'destino')" id="widget_1">
+            Argentina
+        </section>
+        <section onclick="janela(1, 'destino')" id="widget_2">
+            Cuba
+        </section>
+        <section onclick="janela(2, 'destino')" id="widget_3">
+            Indonésia
+        </section>
+        <section onclick="janela(3, 'destino')" id="widget_4">
+            Itália
+        </section>
+        <section onclick="janela(4, 'destino')" id="widget_5">
+            França
+        </section>
+        </ul>
+    </aside>
+    <aside id="sidebar2">
+        <section>
+            <h1>Pacotes para <span id="destino"></span> </h1>
+            <ul id="lista-pacotes">
+            </ul>
+        </section>
+    </aside>
+    <aside id="sidebar3">
+        <section>
+            <h1 id="pacote-conteudo"></h1>
+        </section>
+    </aside>
 </body>
 <script src="/src/main.js"></script>
-<script type="module">
-    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-  
-    const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
 
-        pagination: {
-            el: '.swiper-pagination',
-        },
 
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
-  </script>
 </html>
