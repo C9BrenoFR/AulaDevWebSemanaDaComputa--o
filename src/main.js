@@ -149,3 +149,12 @@ function janela2(aux, id) {
 
 
 
+document.addEventListener('click', function (event) {
+    const cardsMae = document.querySelector('.cards-mae');
+
+    if (!cardsMae.contains(event.target)) {
+        // Fecha a seção
+        nav2.style.display = "none";
+        nav3.style.display = "none";
+    }
+});
