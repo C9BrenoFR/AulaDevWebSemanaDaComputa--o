@@ -47,9 +47,10 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Argentina"
             nav2.style.opacity = "1"
+            document.getElementById("body").style.backgroundImage = "url('https://wallpaper.forfun.com/fetch/c5/c55765dd0a538ab646280d2cf4c1923b.jpeg?download=earth-cerro_torre-argentina-cerro_chalt%C3%A9n-glacier-mount_fitzroy-patagonia-1522961.jpeg')"
             contador = 0;
             argentina.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</section>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -58,9 +59,10 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Cuba"
             nav2.style.opacity = "1"
+            document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/07/25/awesome-cuba-wallpaper_043232386_107.jpg')"
             contador = 0;
             cuba.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</section>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -71,9 +73,10 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Indonésia"
             nav2.style.opacity = "1"
+            document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/08/08/indonesia-desktop-background_020529203_164.jpg')"
             contador = 0;
             indonesia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</section>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -84,9 +87,10 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Itália"
             nav2.style.opacity = "1"
+            document.getElementById("body").style.backgroundImage = "url('https://wallpapercat.com/w/full/d/2/7/31660-3840x2160-desktop-4k-italy-wallpaper.jpg')"
             contador = 0;
             italia.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</section>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -97,9 +101,10 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "França"
             nav2.style.opacity = "1"
+            document.getElementById("body").style.backgroundImage = "url('https://wallpapercave.com/wp/wp1856659.jpg')"
             contador = 0;
             franca.forEach(element => {
-                nav2_conteudo.innerHTML += "<li id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</li>"
+                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</section>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -116,31 +121,31 @@ function janela2(aux, id) {
             nav3_conteudo.innerHTML = "";
             nav3.style.opacity = "1"
             contador = 0;
-            nav3_conteudo.innerHTML += "<li>" + argentina[id].nome + "</li><li>" + argentina[id].preco + "</li><li>" + argentina[id].parcelas + "</li>"
+            nav3_conteudo.innerHTML += "<section>" + argentina[id].nome + "</section><section>" + argentina[id].preco + "</section><section>" + argentina[id].parcelas + "</section>"
             break;
         case 1:
             nav3_conteudo.innerHTML = "";
             nav3.style.opacity = "1"
             contador = 0;
-            nav3_conteudo.innerHTML += "<li>" + cuba[id].nome + "</li><li>" + cuba[id].preco + "</li><li>" + cuba[id].parcelas + "</li>"
+            nav3_conteudo.innerHTML += "<section>" + cuba[id].nome + "</section><section>" + cuba[id].preco + "</section><section>" + cuba[id].parcelas + "</section>"
             break;
         case 2:
             nav3_conteudo.innerHTML = "";
             nav3.style.opacity = "1"
             contador = 0;
-            nav3_conteudo.innerHTML += "<li>" + indonesia[id].nome + "</li><li>" + indonesia[id].preco + "</li><li>" + indonesia[id].parcelas + "</li>"
+            nav3_conteudo.innerHTML += "<section>" + indonesia[id].nome + "</section><section>" + indonesia[id].preco + "</section><section>" + indonesia[id].parcelas + "</section>"
             break;
         case 3:
             nav3_conteudo.innerHTML = "";
             nav3.style.opacity = "1"
             contador = 0;
-            nav3_conteudo.innerHTML += "<li>" + italia[id].nome + "</li><li>" + italia[id].preco + "</li><li>" + italia[id].parcelas + "</li>"
+            nav3_conteudo.innerHTML += "<section>" + italia[id].nome + "</section><section>" + italia[id].preco + "</section><section>" + italia[id].parcelas + "</section>"
             break;
         case 4:
             nav3_conteudo.innerHTML = "";
             nav3.style.opacity = "1"
             contador = 0;
-            nav3_conteudo.innerHTML += "<li>" + franca[id].nome + "</li><li>" + franca[id].preco + "</li><li>" + franca[id].parcelas + "</li>"
+            nav3_conteudo.innerHTML += "<section>" + franca[id].nome + "</section><section>" + franca[id].preco + "</section><section>" + franca[id].parcelas + "</section>"
             break;
         default:
             console.log("Invalid option selected");
@@ -157,5 +162,6 @@ document.addEventListener('click', function (event) {
         nav3 && !nav3.contains(event.target)) {
         nav2.style.opacity = "0";
         nav3.style.opacity = "0";
+        document.getElementById("body").style.backgroundImage = "url('https://www.ticasino.com/uploads/_2000xAUTO_crop_center-center_none/Bus_Tours_Midpage_2400X1200.jpg')"
     }
 });

@@ -16,6 +16,8 @@ body {
     background-image: url('https://www.ticasino.com/uploads/_2000xAUTO_crop_center-center_none/Bus_Tours_Midpage_2400X1200.jpg');
     background-size: cover;
     background-position: center;
+    transition: background-image 0.5s ease-in-out;
+
 }
 
 .navbar {
@@ -24,8 +26,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #366273;
-    color: white;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.00) 44%, #1f1f1f 100%);
+    color: black;
 }
 
 .navbar h1 {
@@ -84,13 +86,29 @@ body {
     color: white;
 }
 
-.sidebar section {
+#sidebar section {
     background-color: black;
     width: 100%;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+    gap: 20px;
 }
+
+#sidebar2 section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sidebar2 section ul section {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
 
 #sidebar2,
 #sidebar3 {
