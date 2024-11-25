@@ -54,6 +54,7 @@ function janela(aux, id) {
                 contador++;
             });
             nav3.style.opacity = "0"
+            aberto++;
             break;
         case 1:
             nav2_conteudo.innerHTML = "";
@@ -66,7 +67,7 @@ function janela(aux, id) {
                 contador++;
             });
             nav3.style.opacity = "0"
-
+            aberto++;
             break;
 
         case 2:
@@ -80,7 +81,7 @@ function janela(aux, id) {
                 contador++;
             });
             nav3.style.opacity = "0"
-
+            aberto++;
             break;
 
         case 3:
@@ -94,7 +95,7 @@ function janela(aux, id) {
                 contador++;
             });
             nav3.style.opacity = "0"
-
+            aberto++;
             break;
 
         case 4:
@@ -108,7 +109,7 @@ function janela(aux, id) {
                 contador++;
             });
             nav3.style.opacity = "0"
-
+            aberto++;
             break;
 
         default:
@@ -116,39 +117,36 @@ function janela(aux, id) {
     }
 }
 function janela2(aux, id) {
-    switch (aux) {
-        case 0:
-            nav3_conteudo.innerHTML = "";
-            nav3.style.opacity = "1"
-            contador = 0;
-            nav3_conteudo.innerHTML += "<section>" + argentina[id].nome + "</section><section>" + argentina[id].preco + "</section><section>" + argentina[id].parcelas + "</section>"
-            break;
-        case 1:
-            nav3_conteudo.innerHTML = "";
-            nav3.style.opacity = "1"
-            contador = 0;
-            nav3_conteudo.innerHTML += "<section>" + cuba[id].nome + "</section><section>" + cuba[id].preco + "</section><section>" + cuba[id].parcelas + "</section>"
-            break;
-        case 2:
-            nav3_conteudo.innerHTML = "";
-            nav3.style.opacity = "1"
-            contador = 0;
-            nav3_conteudo.innerHTML += "<section>" + indonesia[id].nome + "</section><section>" + indonesia[id].preco + "</section><section>" + indonesia[id].parcelas + "</section>"
-            break;
-        case 3:
-            nav3_conteudo.innerHTML = "";
-            nav3.style.opacity = "1"
-            contador = 0;
-            nav3_conteudo.innerHTML += "<section>" + italia[id].nome + "</section><section>" + italia[id].preco + "</section><section>" + italia[id].parcelas + "</section>"
-            break;
-        case 4:
-            nav3_conteudo.innerHTML = "";
-            nav3.style.opacity = "1"
-            contador = 0;
-            nav3_conteudo.innerHTML += "<section>" + franca[id].nome + "</section><section>" + franca[id].preco + "</section><section>" + franca[id].parcelas + "</section>"
-            break;
-        default:
-            console.log("Invalid option selected");
+    if (aberto > 0) {
+        switch (aux) {
+            case 0:
+                nav3_conteudo.innerHTML = "";
+                nav3.style.opacity = "1";
+                nav3_conteudo.innerHTML += "<section>" + argentina[id].nome + "</section><section>" + argentina[id].preco + "</section><section>" + argentina[id].parcelas + "</section>";
+                break;
+            case 1:
+                nav3_conteudo.innerHTML = "";
+                nav3.style.opacity = "1";
+                nav3_conteudo.innerHTML += "<section>" + cuba[id].nome + "</section><section>" + cuba[id].preco + "</section><section>" + cuba[id].parcelas + "</section>";
+                break;
+            case 2:
+                nav3_conteudo.innerHTML = "";
+                nav3.style.opacity = "1";
+                nav3_conteudo.innerHTML += "<section>" + indonesia[id].nome + "</section><section>" + indonesia[id].preco + "</section><section>" + indonesia[id].parcelas + "</section>";
+                break;
+            case 3:
+                nav3_conteudo.innerHTML = "";
+                nav3.style.opacity = "1";
+                nav3_conteudo.innerHTML += "<section>" + italia[id].nome + "</section><section>" + italia[id].preco + "</section><section>" + italia[id].parcelas + "</section>";
+                break;
+            case 4:
+                nav3_conteudo.innerHTML = "";
+                nav3.style.opacity = "1";
+                nav3_conteudo.innerHTML += "<section>" + franca[id].nome + "</section><section>" + franca[id].preco + "</section><section>" + franca[id].parcelas + "</section>";
+                break;
+            default:
+                console.log("Invalid option selected");
+        }
     }
 }
 
@@ -163,5 +161,6 @@ document.addEventListener('click', function (event) {
         nav2.style.opacity = "0";
         nav3.style.opacity = "0";
         document.getElementById("body").style.backgroundImage = "url('https://www.ticasino.com/uploads/_2000xAUTO_crop_center-center_none/Bus_Tours_Midpage_2400X1200.jpg')"
+        aberto = 0;
     }
 });
