@@ -58,12 +58,21 @@ footer {
 }
 
 .navbarButton {
-    background: yellow;
-    color: black;
+    background: purple;
+    color: #F5F2DC;
     padding: 3px 10px;
     border-radius: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.navbarButton:hover {
+    box-shadow: 
+      0 0 2px purple, 
+      inset 0 0 2px purple, 
+      0 0 5px purple, 
+      0 0 15px purple, 
+      0 0 30px purple;
+  }
 
 .navbarButton:hover {
     transform: scale(1.2);
