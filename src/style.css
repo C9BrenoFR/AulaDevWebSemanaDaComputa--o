@@ -4,10 +4,33 @@
     --image3: url('https://career-advice.jobs.ac.uk/wp-content/uploads/Switzerland-e1634207571492.jpg.optimal.jpg');
 }
 
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.pacote-btn {
+    background-color: purple;
+    color: #F5F2DC;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+}
+
+.pacotes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 body {
@@ -23,6 +46,39 @@ body {
     transition: background-image 0.5s ease-in-out;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 0px 40px;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-esquerda img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.footer-esquerda {
+    min-width: 15%;
+}
+
+.social {
+    min-width: 15%;
+}
+
+.footer-centro {
+    align-self: flex-end;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
 
 .navbar {
     display: flex;
@@ -42,6 +98,22 @@ footer {
 
 .navbar h1 {
     font-size: 2rem;
+}
+
+#sidebar section {
+    transition: transform 300ms ease-in-out;
+}
+
+#sidebar section:hover {
+    transform: scale(1.1);
+}
+
+.pacote-btn {
+    transition: transform 300ms ease-in-out;
+}
+
+.pacote-btn:hover {
+    transform: scale(1.1);
 }
 
 .navbar ul {
