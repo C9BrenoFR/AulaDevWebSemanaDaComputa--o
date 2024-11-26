@@ -150,8 +150,6 @@ function janela2(aux, id) {
     }
 }
 
-
-
 document.addEventListener('click', function (event) {
     const nav1 = document.getElementById("sidebar");
 

@@ -30,13 +30,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0) 44%, #1f1f1f 100%);
-    color: black;
+    background: #F5F2DC;
+    color: purple;
 }
 
 footer {
     text-align: center;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 44%, #1f1f1f 100%);
+    background-color: #F5F2DC;
+    color: purple;
 }
 
 .navbar h1 {
@@ -51,15 +52,14 @@ footer {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: #F5F2DC;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .navbarButton {
-    border: 2px solid black;
-    background: black;
-    color: white;
+    background: yellow;
+    color: black;
     padding: 3px 10px;
     border-radius: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -67,7 +67,7 @@ footer {
 
 .navbarButton:hover {
     transform: scale(1.2);
-    filter: drop-shadow(0 0 0.75rem white);
+    filter: drop-shadow(0 0 0.75rem #F5F2DC);
 }
 
 .cards-mae {
@@ -88,15 +88,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #366273;
-    color: white;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
     gap: 20px;
 }
 
 #sidebar section,
 #sidebar2 section ul section {
-    background-color: black;
-    color: white;
+    background-color: purple;
+    color: #F5F2DC;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
