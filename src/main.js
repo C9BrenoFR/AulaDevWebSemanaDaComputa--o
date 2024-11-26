@@ -47,7 +47,7 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Argentina"
             nav2.style.opacity = "1"
-            document.getElementById("body").style.backgroundImage = "url('https://wallpaper.forfun.com/fetch/c5/c55765dd0a538ab646280d2cf4c1923b.jpeg?download=earth-cerro_torre-argentina-cerro_chalt%C3%A9n-glacier-mount_fitzroy-patagonia-1522961.jpeg')"
+            document.getElementById("body").style.backgroundImage = "var(--bg-argentina)"
             contador = 0;
             argentina.forEach(element => {
                 nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</button>"
@@ -60,7 +60,7 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Cuba"
             nav2.style.opacity = "1"
-            document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/07/25/awesome-cuba-wallpaper_043232386_107.jpg')"
+            document.getElementById("body").style.backgroundImage = "var(--bg-cuba)"
             contador = 0;
             cuba.forEach(element => {
                 nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</button>"
@@ -74,7 +74,7 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Indonésia"
             nav2.style.opacity = "1"
-            document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/08/08/indonesia-desktop-background_020529203_164.jpg')"
+            document.getElementById("body").style.backgroundImage = "var(--bg-indonesia)"
             contador = 0;
             indonesia.forEach(element => {
                 nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</button>"
@@ -88,7 +88,7 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "Itália"
             nav2.style.opacity = "1"
-            document.getElementById("body").style.backgroundImage = "url('https://wallpapercat.com/w/full/d/2/7/31660-3840x2160-desktop-4k-italy-wallpaper.jpg')"
+            document.getElementById("body").style.backgroundImage = "var(--bg-italia)"
             contador = 0;
             italia.forEach(element => {
                 nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</button>"
@@ -102,7 +102,7 @@ function janela(aux, id) {
             nav2_conteudo.innerHTML = "";
             document.getElementById(id).innerHTML = "França"
             nav2.style.opacity = "1"
-            document.getElementById("body").style.backgroundImage = "url('https://wallpapercave.com/wp/wp1856659.jpg')"
+            document.getElementById("body").style.backgroundImage = "var(--bg-franca)"
             contador = 0;
             franca.forEach(element => {
                 nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</button>"
@@ -158,7 +158,7 @@ document.addEventListener('click', function (event) {
         nav3 && !nav3.contains(event.target)) {
         nav2.style.opacity = "0";
         nav3.style.opacity = "0";
-        document.getElementById("body").style.backgroundImage = "url('https://www.ticasino.com/uploads/_2000xAUTO_crop_center-center_none/Bus_Tours_Midpage_2400X1200.jpg')"
+        document.getElementById("body").style.backgroundImage = "var(--bg-default)"
         aberto = 0;
     }
 });
