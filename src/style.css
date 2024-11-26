@@ -24,8 +24,8 @@
 }
 
 .pacote-btn {
-    background-color: --roxo-bg;
-    color: #F5F2DC;
+    background-color: var(--roxo-bg);
+    color: var(--branco-bg);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -92,14 +92,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #F5F2DC;
-    color: --roxo-bg;
+    background: var(--branco-bg);
+    color: var(--roxo-bg);
 }
 
 footer {
     text-align: center;
-    background-color: #F5F2DC;
-    color: --roxo-bg;
+    background-color: var(--branco-bg);
+    color: var(--roxo-bg);
 }
 
 .navbar h1 {
@@ -108,6 +108,7 @@ footer {
 
 #sidebar section {
     transition: transform 300ms ease-in-out;
+    cursor: pointer;
 }
 
 #sidebar section:hover {
@@ -116,6 +117,7 @@ footer {
 
 .pacote-btn {
     transition: transform 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .pacote-btn:hover {
@@ -130,14 +132,14 @@ footer {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #F5F2DC;
+    color: var(--branco-bg);
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .navbarButton {
-    background: --roxo-bg;
-    color: #F5F2DC;
+    background: var(--roxo-bg);
+    color: var(--branco-bg);
     padding: 3px 10px;
     border-radius: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -145,16 +147,16 @@ footer {
 
 .navbarButton:hover {
     box-shadow:
-        0 0 2px --roxo-bg,
-        inset 0 0 2px --roxo-bg,
-        0 0 5px --roxo-bg,
-        0 0 15px --roxo-bg,
-        0 0 30px --roxo-bg;
+        0 0 2px var(--roxo-bg),
+        inset 0 0 2px var(--roxo-bg),
+        0 0 5px var(--roxo-bg),
+        0 0 15px var(--roxo-bg),
+        0 0 30px var(--roxo-bg);
 }
 
 .navbarButton:hover {
     transform: scale(1.2);
-    filter: drop-shadow(0 0 0.75rem #F5F2DC);
+    filter: drop-shadow(0 0 0.75rem var(--branco-bg));
 }
 
 .cards-mae {
@@ -188,8 +190,8 @@ footer {
 
 #sidebar section,
 #sidebar2 section ul section {
-    background-color: --roxo-bg;
-    color: #F5F2DC;
+    background-color: var(--roxo-bg);
+    color: var(--branco-bg);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
