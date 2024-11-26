@@ -50,7 +50,7 @@ function janela(aux, id) {
             document.getElementById("body").style.backgroundImage = "url('https://wallpaper.forfun.com/fetch/c5/c55765dd0a538ab646280d2cf4c1923b.jpeg?download=earth-cerro_torre-argentina-cerro_chalt%C3%A9n-glacier-mount_fitzroy-patagonia-1522961.jpeg')"
             contador = 0;
             argentina.forEach(element => {
-                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</section>"
+                nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(0, " + contador + ")'>" + element.nome + "</button>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -63,7 +63,7 @@ function janela(aux, id) {
             document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/07/25/awesome-cuba-wallpaper_043232386_107.jpg')"
             contador = 0;
             cuba.forEach(element => {
-                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</section>"
+                nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(1, " + contador + ")'>" + element.nome + "</button>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -77,7 +77,7 @@ function janela(aux, id) {
             document.getElementById("body").style.backgroundImage = "url('https://s1.picswalls.com/wallpapers/2014/08/08/indonesia-desktop-background_020529203_164.jpg')"
             contador = 0;
             indonesia.forEach(element => {
-                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</section>"
+                nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(2, " + contador + ")'>" + element.nome + "</button>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -91,7 +91,7 @@ function janela(aux, id) {
             document.getElementById("body").style.backgroundImage = "url('https://wallpapercat.com/w/full/d/2/7/31660-3840x2160-desktop-4k-italy-wallpaper.jpg')"
             contador = 0;
             italia.forEach(element => {
-                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</section>"
+                nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(3, " + contador + ")'>" + element.nome + "</button>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -105,7 +105,7 @@ function janela(aux, id) {
             document.getElementById("body").style.backgroundImage = "url('https://wallpapercave.com/wp/wp1856659.jpg')"
             contador = 0;
             franca.forEach(element => {
-                nav2_conteudo.innerHTML += "<section id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</section>"
+                nav2_conteudo.innerHTML += "<button class='pacote-btn' id='" + element.nome + "' onclick='janela2(4, " + contador + ")'>" + element.nome + "</button>"
                 contador++;
             });
             nav3.style.opacity = "0"
@@ -122,7 +122,7 @@ function janela2(aux, id) {
             case 0:
                 nav3_conteudo.innerHTML = "";
                 nav3.style.opacity = "1";
-                nav3_conteudo.innerHTML += "<section>" + argentina[id].nome + "</section><section>" + argentina[id].preco + "</section><section>" + argentina[id].parcelas + "</section>";
+                nav3_conteudo.innerHTML += "<section>" + argentina[id].nome + "</section><section>" + argentina[id].preco + "</section><button>" + argentina[id].parcelas + "</section>";
                 break;
             case 1:
                 nav3_conteudo.innerHTML = "";
