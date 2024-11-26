@@ -24,7 +24,7 @@
 }
 
 .pacote-btn {
-    background-color: purple;
+    background-color: --roxo-bg;
     color: #F5F2DC;
     text-align: center;
     padding: 20px;
@@ -93,13 +93,13 @@ footer {
     align-items: center;
     padding: 20px;
     background: #F5F2DC;
-    color: purple;
+    color: --roxo-bg;
 }
 
 footer {
     text-align: center;
     background-color: #F5F2DC;
-    color: purple;
+    color: --roxo-bg;
 }
 
 .navbar h1 {
@@ -136,7 +136,7 @@ footer {
 }
 
 .navbarButton {
-    background: purple;
+    background: --roxo-bg;
     color: #F5F2DC;
     padding: 3px 10px;
     border-radius: 5px;
@@ -145,11 +145,11 @@ footer {
 
 .navbarButton:hover {
     box-shadow:
-        0 0 2px purple,
-        inset 0 0 2px purple,
-        0 0 5px purple,
-        0 0 15px purple,
-        0 0 30px purple;
+        0 0 2px --roxo-bg,
+        inset 0 0 2px --roxo-bg,
+        0 0 5px --roxo-bg,
+        0 0 15px --roxo-bg,
+        0 0 30px --roxo-bg;
 }
 
 .navbarButton:hover {
@@ -188,7 +188,7 @@ footer {
 
 #sidebar section,
 #sidebar2 section ul section {
-    background-color: purple;
+    background-color: --roxo-bg;
     color: #F5F2DC;
     text-align: center;
     padding: 20px;
